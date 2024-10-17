@@ -119,7 +119,8 @@ nav {
 }
 
 main {
-  margin-top: 3rem;
+  margin-left: 16rem;
+  margin-top: 4rem;
   padding: 16px;
 }
 
@@ -207,9 +208,6 @@ footer {
   .container-xxl,
   .container-fluid {
     max-width: 100%;
-  }
-  main {
-    margin-left: 16rem;
   }
 
   .sidebar {
