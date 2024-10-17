@@ -27,6 +27,49 @@ nav {
   margin-left: 10px;
   z-index: 999;
 }
+
+.sidebar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.sidebar-item:hover {
+  scale: 1.1 !important;
+}
+
+.sidebar-item:active {
+  scale: 0.9 !important;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #2a2a2d;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  z-index: 999;
+  display: none; /* Hidden by default */
+}
+
 .navbar-item {
   display: flex;
   cursor: pointer;
@@ -40,9 +83,8 @@ nav {
   display: block;
 }
 .navbar-item img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  width: 48px;
+  height: 48px;
   display: block;
   margin: 0 auto 5px;
 }
@@ -112,6 +154,9 @@ footer {
   .container-fluid {
     max-width: 100%;
   }
+  .navbar {
+    width: 89% !important;
+  }
 }
 
 /* SM: ≥ 576px */
@@ -126,6 +171,9 @@ footer {
   .container-xxl,
   .container-fluid {
     max-width: 100%;
+  }
+  .navbar {
+    width: 90% !important;
   }
 }
 
@@ -142,6 +190,9 @@ footer {
   .container-fluid {
     max-width: 100%;
   }
+  .navbar {
+    width: 96% !important;
+  }
 }
 
 /* LG: ≥ 992px */
@@ -156,6 +207,22 @@ footer {
   .container-xxl,
   .container-fluid {
     max-width: 100%;
+  }
+  main {
+    margin-left: 16rem;
+  }
+
+  .sidebar {
+    display: block; /* Visible on desktop */
+  }
+  .navbar {
+    width: 75.5% !important;
+    margin-left: 18rem !important;
+  }
+
+  footer {
+    width: 80% !important;
+    margin-left: 17rem !important;
   }
 }
 
@@ -172,6 +239,10 @@ footer {
   .container-fluid {
     max-width: 100%;
   }
+
+  .navbar {
+    width: 76.5% !important;
+  }
 }
 
 /* XXL: ≥ 1400px */
@@ -186,5 +257,13 @@ footer {
   }
   .container-fluid {
     max-width: 100%;
+  }
+
+  footer {
+    width: 85.5% !important;
+  }
+
+  .navbar {
+    width: 82.5% !important;
   }
 }
