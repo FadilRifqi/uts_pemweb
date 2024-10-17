@@ -1,0 +1,128 @@
+/* Base styles */
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Default to column for mobile */
+  gap: 16px;
+}
+
+.text {
+  text-align: justify;
+}
+
+.video {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+}
+
+.club {
+  text-align: justify;
+}
+
+.club img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #2a2a2d;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    width: 89% !important;
+  }
+}
+
+/* SM: ≥ 576px */
+@media (min-width: 576px) {
+  .col {
+    flex-direction: row; /* Change to row for larger screens */
+  }
+  .image,
+  .text {
+    flex: 1; /* Each takes up equal space */
+  }
+  .navbar {
+    width: 90% !important;
+  }
+}
+
+/* MD: ≥ 768px */
+@media (min-width: 768px) {
+  .image,
+  .text {
+    flex: 1; /* Each takes up equal space */
+  }
+  .navbar {
+    width: 96% !important;
+  }
+}
+
+/* LG: ≥ 992px */
+@media (min-width: 992px) {
+  .image,
+  .text {
+    flex: 1; /* Each takes up equal space */
+  }
+
+  .sidebar {
+    display: block; /* Visible on desktop */
+  }
+
+  .navbar {
+    width: 75.5% !important;
+    margin-left: 18rem !important;
+  }
+
+  footer {
+    width: 80% !important;
+    margin-left: 17rem !important;
+  }
+}
+
+/* XL: ≥ 1200px */
+@media (min-width: 1200px) {
+  .image,
+  .text {
+    flex: 1; /* Each takes up equal space */
+  }
+
+  .navbar {
+    width: 76.5% !important;
+  }
+}
+
+/* XXL: ≥ 1400px */
+@media (min-width: 1400px) {
+  .image,
+  .text {
+    flex: 1; /* Each takes up equal space */
+  }
+
+  footer {
+    width: 85.5% !important;
+  }
+
+  .navbar {
+    width: 82.5% !important;
+  }
+}
