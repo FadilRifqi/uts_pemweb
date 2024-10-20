@@ -1,3 +1,3 @@
 ### Pages Link
 
-https://github.com/FadilRifqi/uts_pemweb
+https://fadilrifqi.github.io/uts_pemweb/
