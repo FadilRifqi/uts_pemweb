@@ -98,6 +98,14 @@ nav {
   scale: 1.1 !important;
 }
 
+.navbar-container {
+  display: none;
+}
+
+.navbar-container-content {
+  display: block;
+}
+
 .navbar-item:active {
   scale: 0.9 !important;
 }
@@ -119,7 +127,6 @@ nav {
 }
 
 main {
-  margin-left: 16rem;
   margin-top: 4rem;
   padding: 16px;
 }
@@ -210,6 +217,14 @@ footer {
     max-width: 100%;
   }
 
+  .navbar-container {
+    display: block;
+  }
+
+  .navbar-container-content {
+    display: none;
+  }
+
   .sidebar {
     display: block; /* Visible on desktop */
   }
@@ -221,6 +236,10 @@ footer {
   footer {
     width: 80% !important;
     margin-left: 17rem !important;
+  }
+
+  main {
+    margin-left: 16rem;
   }
 }
 
